@@ -1,0 +1,194 @@
+body, html {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #081b29;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a, #logout {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover, #logout:hover {
+    color: #cccccc;
+}
+
+#user-info {
+    display: flex;
+    align-items: center;
+}
+
+#username {
+    margin-right: 1rem;
+    font-weight: 300;
+}
+
+.btn-small {
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.btn-small:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#hero {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.cta-button, .btn-secondary {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover, .btn-secondary:hover {
+    background-color: #cccccc;
+}
+
+#latest-mission {
+    padding: 5rem 10%;
+    background-color: #111111;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.mission-info {
+    max-width: 600px;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #111111;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-content > * {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+h1 { animation-delay: 0.2s; }
+p { animation-delay: 0.4s; }
+.cta-button { animation-delay: 0.6s; }
+
+/* 可能需要添加以下样式来确保在小屏幕上也能正确显示 */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #user-info {
+        margin-top: 1rem;
+        align-self: flex-end;
+    }
+}
