@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENDLESS - Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-line"></div>
+            <div class="loader-text">LOADING</div>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT Game</a></li>
+                <li><a href="#features">FEATURES</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#download">DOWNLOAD</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Developing... \ </h1>
+            <p>Stay tuned</p>
+            <a href="#download" class="cta-button">Play now</a>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Game</h2>
+            <p>The content is pending0</p>
+            <div class="about-grid">
+                <div class="about-item">
+                    <h3>The content is pending1</h3>
+                    <p>TEST</p>
+                </div>
+                <div class="about-item">
+                    <h3>The content is pending2</h3>
+                    <p>TEST</p>
+                </div>
+                <div class="about-item">
+                    <h3>The content is pending3</h3>
+                    <p>TEST</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2>The content is pending4</h2>
+            <ul class="feature-list">
+                <li>TEST</li>
+                <li>TEST</li>
+                <li>TEST</li>
+                <li>TEST</li>
+                <li>TEST</li>
+                <li>TEST</li>
+            </ul>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <h2>游戏画面</h2>
+            <div class="gallery-grid">
+                <img src="https://www.yebaike.com/d/file/20221212/b4faef2980924f5868e42483b408a817.jpg" class="gallery-item">
+                <img src="https://www.yebaike.com/d/file/20221212/b4faef2980924f5868e42483b408a817.jpg" class="gallery-item">
+                <img src="https://www.yebaike.com/d/file/20221212/b4faef2980924f5868e42483b408a817.jpg" class="gallery-item">
+                <img src="https://www.yebaike.com/d/file/20221212/b4faef2980924f5868e42483b408a817.jpg" class="gallery-item">
+            </div>
+        </section>
+
+        <section id="download" class="download">
+            <h2>Download</h2>
+            <p>Choose your platform and start your adventure with Endless</p>
+            <div class="download-buttons">
+                <a href="#" class="download-button">预约Mobile</a>
+                <a href="#" class="download-button">预约PC</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact us</h3>
+                <p><i class="fas fa-envelope"></i> Email: 1590489592@qq.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-bilibili"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2023  ENDLESS All rights reserved</p>
+    </footer>
+    <script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.querySelector('.loader').style.display = 'none';
+            }, 2000);  // 将这里的3000改为2000
+        });
+    </script>
+</body>
+</html>

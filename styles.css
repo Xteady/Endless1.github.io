@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    letter-spacing: 2px;
+}
+
+nav ul li a:hover {
+    color: #00ffff;
+}
+
+/* Main content styles */
+main {
+    padding-top: 60px;
+}
+
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Hero section */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('path/to/your/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    letter-spacing: 1rem;
+    text-shadow: 0 0 10px rgba(255,255,255,0.5);
+}
+
+.cta-button {
+    display: inline-block;
+    background: transparent;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid #fff;
+    letter-spacing: 2px;
+}
+
+.cta-button:hover {
+    background: #00ffff;
+    color: #000;
+    border-color: #00ffff;
+}
+
+/* About section */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.about-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.about-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Features section */
+.feature-list {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.feature-list li {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.feature-list li:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+}
+
+/* Gallery section */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+/* Download section */
+.download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.download-button {
+    background: transparent;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid #fff;
+    letter-spacing: 2px;
+}
+
+.download-button:hover {
+    background: #00ffff;
+    color: #000;
+    border-color: #00ffff;
+}
+
+/* Footer styles */
+footer {
+    background: #000;
+    text-align: center;
+    padding: 2rem 0;
+    letter-spacing: 1px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.footer-section p i {
+    margin-right: 10px;
+    color: #00ffff;
+}
+
+.social-icon i {
+    font-size: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background: #00ffff;
+    color: #000;
+}
+
+/* Loader styles */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader-content {
+    text-align: center;
+}
+
+.loader-line {
+    width: 100px;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.loader-line::before {
+    content: '';
+    position: absolute;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #00ffff;
+    animation: loading 1.5s linear infinite;
+}
+
+.loader-text {
+    font-size: 18px;
+    letter-spacing: 5px;
+    animation: blink 1s linear infinite;
+}
+
+@keyframes loading {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* 自适应设计 */
+@media screen and (max-width: 768px) {
+    /* 导航栏 */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    /* 英雄区域 */
+    .hero h1 {
+        font-size: 3rem;
+        letter-spacing: 0.5rem;
+    }
+
+    /* 关于部分 */
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* 特性列表 */
+    .feature-list {
+        grid-template-columns: 1fr;
+    }
+
+    /* 画廊 */
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* 下载按钮 */
+    .download-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download-button {
+        margin-bottom: 1rem;
+    }
+
+    /* 页脚 */
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* 英雄区域 */
+    .hero h1 {
+        font-size: 2rem;
+        letter-spacing: 0.3rem;
+    }
+
+    /* 各部分的内边距 */
+    section {
+        padding: 2rem 1rem;
+    }
+}
